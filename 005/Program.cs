@@ -4,7 +4,6 @@ int[] array = new int[Length];
 for(int i = 0; i < Length; i++)
      array[i] = new Random().Next(-10,111);
 Console.Write("Ваш массив: ");
-Console.WriteLine();
 
 for(int i = 0; i < Length; i++)
     Console.Write($"{array[i]} ");
@@ -15,7 +14,7 @@ for(int i = 0; i < Length; i++)
     if((array[i]>=10) &&(array[i]<=99))
     count++;
 }
- Console.WriteLine($" Количество элементов из отрезка [10,99]:  {count} ");
- Console.WriteLine();
+Console.WriteLine();
+Console.Write($" Количество элементов из отрезка [10,99]:  {count} ");
 
 
