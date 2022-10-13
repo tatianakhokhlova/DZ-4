@@ -1,14 +1,9 @@
 ﻿// задать массив из 8 элементов и вывести его на экран
 
-int[] arr = {1, 2, 3, 3, 2, 5, 6, 9};
-void PrintArray(int[] array)
-
-{
-    int count = array.Length;
-    for(int i = 0; i<count; i++)
-    {
-        Console.Write($"{array[i]}");
-    }
-    Console.WriteLine();
-}
-PrintArray(arr);
+int Length = 8;
+int[] array = new int[Length];
+for(int i = 0; i < 8; i++)
+     array[i] = new Random().Next(0,2);
+Console.Write("Ваш массив: ");
+for(int i = 0; i < 8; i++)
+    Console.Write($"{array[i]} ");
