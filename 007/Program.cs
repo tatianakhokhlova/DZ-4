@@ -12,14 +12,12 @@ for(int i = 0; i < length; i++)
 {
     Console.Write($"{array[i]} ");
 }
-int index = 0;
 int S = 1;
 int j = array.Length - 1;
 for(int i = 0; i<j; i++)
 {
-    S=array[index] * array[j];
-    Console.WriteLine($"Произведение пар: {array[index]} * {array[j]} = {S}; ");
+    S=array[i] * array[j];
+    Console.WriteLine($"Произведение пар: {array[i]} * {array[j]} = {S}; ");
     j--;
-    index++;
 }
    
